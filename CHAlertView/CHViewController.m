@@ -47,61 +47,65 @@
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    NSString *title = @"提示";
+    NSString *message = [self.array objectAtIndex:indexPath.row];
+    NSString *seleConfim = @"你点击了确定";
+    NSString *seleCancle = @"你点击了取消";
     if (indexPath.row == 0) {
-        [self ch_alertConfimTitle:@"提示" message:[self.array objectAtIndex:indexPath.row]];
+        [self ch_alertConfimTitle:title message:message];
     }
     if (indexPath.row == 1) {
-        [self ch_alertConfimTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] style:CHAlertCustomStyle];
+        [self ch_alertConfimTitle:title message:message style:CHAlertCustomStyle];
     }
     if (indexPath.row == 2) {
-        [self ch_alertConfimTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertConfimTitle:title message:message confimBlock:^{
+            NSLog(seleConfim);
         }];
     }
     if (indexPath.row == 3) {
-        [self ch_alertConfimTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertConfimTitle:title message:message confimBlock:^{
+            NSLog(seleConfim);
         } style:CHAlertCustomStyle];
     }
     if (indexPath.row == 4) {
-        [self ch_alertConfimTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimTitle:@"确定" confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertConfimTitle:title message:message confimTitle:@"确定" confimBlock:^{
+            NSLog(seleConfim);
         }];
     }
     if (indexPath.row == 5) {
-        [self ch_alertConfimTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimTitle:@"确定" confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertConfimTitle:title message:message confimTitle:@"确定" confimBlock:^{
+            NSLog(seleConfim);
         } style:CHAlertCustomStyle];
     }
     if (indexPath.row == 6) {
-        [self ch_alertDialogTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertDialogTitle:title message:message confimBlock:^{
+            NSLog(seleConfim);
         }];
     }
     if (indexPath.row == 7) {
-        [self ch_alertDialogTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertDialogTitle:title message:message confimBlock:^{
+            NSLog(seleConfim);
         } style:CHAlertCustomStyle];
     }
     if (indexPath.row == 8) {
-        [self ch_alertDialogTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] cancelBlock:^{
-            NSLog(@"你点击了取消");
+        [self ch_alertDialogTitle:title message:message cancelBlock:^{
+            NSLog(seleCancle);
         } confimBlock:^{
-            NSLog(@"你点击了确定");
+            NSLog(seleConfim);
         }];
     }
     if (indexPath.row == 9) {
-        [self ch_alertDialogTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] cancelBlock:^{
-            NSLog(@"你点击了取消");
+        [self ch_alertDialogTitle:title message:message cancelBlock:^{
+            NSLog(seleCancle);
         } confimBlock:^{
-            NSLog(@"你点击了确定");
+            NSLog(seleConfim);
         } style:CHAlertCustomStyle];
     }
     if (indexPath.row == 10) {
-        [self ch_alertDialogTitle:@"提示" message:[self.array objectAtIndex:indexPath.row] confimBlock:^{
-            NSLog(@"你点击了确定");
+        [self ch_alertDialogTitle:title message:message confimBlock:^{
+            NSLog(seleConfim);
         } cancelBlock:^{
-            NSLog(@"你点击了取消");
+            NSLog(seleCancle);
         } cancelButtonTitle:@"取消" confimButtonTitle:@"确定" style:(CHAlertCustomStyle)];
     }
 }
