@@ -14,7 +14,7 @@
 		68653BE81D487C3300C08171 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 68653BE61D487C3300C08171 /* LaunchScreen.storyboard */; };
 		68653BF41D487C4900C08171 /* CHAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = 68653BF11D487C4900C08171 /* CHAlertView.m */; };
 		68653BF51D487C4900C08171 /* NSObject+CHAlert.m in Sources */ = {isa = PBXBuildFile; fileRef = 68653BF31D487C4900C08171 /* NSObject+CHAlert.m */; };
-		68653BF81D487C7200C08171 /* CHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68653BF71D487C7200C08171 /* CHViewController.m */; };
+		68653C011D48804400C08171 /* CHViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 68653C001D48804400C08171 /* CHViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,8 +30,8 @@
 		68653BF11D487C4900C08171 /* CHAlertView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHAlertView.m; sourceTree = "<group>"; };
 		68653BF21D487C4900C08171 /* NSObject+CHAlert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+CHAlert.h"; sourceTree = "<group>"; };
 		68653BF31D487C4900C08171 /* NSObject+CHAlert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+CHAlert.m"; sourceTree = "<group>"; };
-		68653BF61D487C7200C08171 /* CHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHViewController.h; path = "../../组件/CHAlertViewC/CHViewController.h"; sourceTree = "<group>"; };
-		68653BF71D487C7200C08171 /* CHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHViewController.m; path = "../../组件/CHAlertViewC/CHViewController.m"; sourceTree = "<group>"; };
+		68653BFF1D48804400C08171 /* CHViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CHViewController.h; sourceTree = "<group>"; };
+		68653C001D48804400C08171 /* CHViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CHViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,8 +67,8 @@
 				68653BEF1D487C4900C08171 /* CHAlertView */,
 				68653BDB1D487C3300C08171 /* AppDelegate.h */,
 				68653BDC1D487C3300C08171 /* AppDelegate.m */,
-				68653BF61D487C7200C08171 /* CHViewController.h */,
-				68653BF71D487C7200C08171 /* CHViewController.m */,
+				68653BFF1D48804400C08171 /* CHViewController.h */,
+				68653C001D48804400C08171 /* CHViewController.m */,
 				68653BE11D487C3300C08171 /* Main.storyboard */,
 				68653BE41D487C3300C08171 /* Assets.xcassets */,
 				68653BE61D487C3300C08171 /* LaunchScreen.storyboard */,
@@ -167,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				68653BF81D487C7200C08171 /* CHViewController.m in Sources */,
+				68653C011D48804400C08171 /* CHViewController.m in Sources */,
 				68653BDD1D487C3300C08171 /* AppDelegate.m in Sources */,
 				68653BF41D487C4900C08171 /* CHAlertView.m in Sources */,
 				68653BDA1D487C3300C08171 /* main.m in Sources */,
@@ -322,6 +322,7 @@
 				68653BEE1D487C3300C08171 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
