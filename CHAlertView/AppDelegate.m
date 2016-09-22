@@ -22,6 +22,7 @@
     CHViewController *vc = [CHViewController new];
     UINavigationController *navc = [[UINavigationController alloc] initWithRootViewController:vc];
     navc.navigationBar.translucent = NO;
+    
     self.window.rootViewController = navc;
     
     // Override point for customization after application launch.
